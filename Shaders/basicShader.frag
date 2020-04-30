@@ -1,13 +1,9 @@
-#version 460
+#version 460 core
 
-in vec2 texCoord;
+in vec3 color;
 
-out vec4 color;
+out vec4 outColor;
 
-uniform sampler2D theTexture;
-
-void main() {
-    color = texture(theTexture, texCoord);
-    // color = vec4(texCoord, 0, 1);
-    if (color.a < 0.1) { discard; }
+void main() { 
+	outColor = vec4(color, 1.0);
 }

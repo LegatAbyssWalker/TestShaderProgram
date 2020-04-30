@@ -22,7 +22,7 @@ void Window::initWindow() {
 	}
 	inFile.close();
 
-	// SFML
+	// SFML 
 	window.create(windowBounds, title, sf::Style::Default, contextSettings);
 
 	window.setPosition({window.getPosition().x, window.getPosition().y - 50});

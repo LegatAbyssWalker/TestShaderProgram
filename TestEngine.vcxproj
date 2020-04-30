@@ -144,18 +144,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Models\Functionality\Loader.cpp" />
+    <ClCompile Include="src\Models\Functionality\Renderer.cpp" />
+    <ClCompile Include="src\Program\ShaderProgram.cpp" />
+    <ClCompile Include="src\States\GameStates\PlayingState.cpp" />
+    <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Player\Camera.cpp" />
     <ClCompile Include="src\Player\Player.cpp" />
-    <ClCompile Include="src\Shaders\Program.cpp" />
     <ClCompile Include="src\States\Functionality\State.cpp" />
     <ClCompile Include="src\States\Functionality\StateMachine.cpp" />
     <ClCompile Include="src\Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Models\Functionality\Loader.h" />
+    <ClInclude Include="src\Models\Functionality\RawModel.h" />
+    <ClInclude Include="src\Models\Functionality\Renderer.h" />
+    <ClInclude Include="src\Program\ShaderProgram.h" />
+    <ClInclude Include="src\States\GameStates\PlayingState.h" />
+    <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\Player\Camera.h" />
     <ClInclude Include="src\Player\Player.h" />
-    <ClInclude Include="src\Shaders\Program.h" />
     <ClInclude Include="src\States\Functionality\State.h" />
     <ClInclude Include="src\States\Functionality\StateMachine.h" />
     <ClInclude Include="src\Utilities\FileLocations.h" />
@@ -178,6 +187,8 @@
     <None Include="sfml-system-d-2.dll" />
     <None Include="sfml-window-2.dll" />
     <None Include="sfml-window-d-2.dll" />
+    <None Include="Shaders\basicShader.frag" />
+    <None Include="Shaders\basicShader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

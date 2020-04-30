@@ -1,16 +1,10 @@
-#version 460
+#version 460 core
 
-layout (location = 0) in vec3 pos;
-layout (location = 1) in vec2 tex;
-layout (location = 2) in vec3 normal;
+in vec3 position;
 
-out vec2 texCoord;
-
-uniform mat4 model;
-uniform mat4 view;
-uniform mat4 projection;
+out vec3 color;
 
 void main() {
-    texCoord = tex;
-    gl_Position = projection * view * model * vec4(pos, 1.0);
+	gl_Position = vec4(position, 1.0);
+	color = vec3(position.x + 0.5, 0, position.y + 0.5);
 }

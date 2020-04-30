@@ -5,7 +5,7 @@
 #include "../Window/Window.h"
 #include "../Utilities/FileLocations.h"
 #include "../Utilities/Variables.h"
-#include "../Shaders/Program.h"
+#include "../Program/ShaderProgram.h"
 
 #include <iostream>
 #include <memory>
